@@ -1,0 +1,28 @@
+:root {
+    --white: #ffffff;
+    --dark-purple: #462356;
+    --dark-purple2: #2B1038;
+    --black: #000000;
+}
+
+body{
+    background-color: var(--dark-purple2);
+}
+
+.inputs p input, .inputs p select, .button, .result{
+    border-color: var(--white);
+}
+
+.container, .inputs p input, .inputs p select, .button, .result{
+    background-color: var(--dark-purple);
+}
+
+.container, .button, .inputs p select, .inputs p input, .result{
+    color: var(--white);
+}
+
+.inputs p select:not([multiple]){
+    background-image: url(../../imgs/darkForSelect.svg);
+}
+
+

@@ -1,0 +1,181 @@
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@media (max-width: 768px) {
+
+    body{
+        /* height: calc(700vw*100/360); */
+        font-size: var(--fs16);  
+    }
+
+    :root {
+        --white: #ffffff;
+        --purple: #8133A6;
+        --pink: #C99DDE;
+        --black: #000000;
+        --fs12: calc(12vw*100/360);
+        --fs16: calc(16vw*100/360);
+        --fs18: calc(18vw*100/360);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* header-start*/
+
+    header {
+        padding: 0 calc(15vw*100/360) 0 calc(15vw*100/360);
+        height: calc(90vw*100/360);
+        font-size: var(--fs12);
+    }
+
+    header .logoBlock {
+        border-radius: calc(12vw*100/360);
+        width: calc(115vw*100/360);
+        height: calc(57vw*100/360);
+        border: calc(3vw*100/360) solid var(--pink);
+    }
+
+    header .logoBlock img{
+        width: calc(98vw*100/360);
+    }
+
+    header .switches {
+        height: calc(52vw*100/360);
+        width: calc(148vw*100/360);
+    }
+
+    .switch {
+        width: calc(35vw*100/360);
+        height: calc(20vw*100/360);
+    }
+
+    .slider {
+        border-radius: calc(50vw*100/360);
+    }
+
+    .slider:before {
+        height: calc(14vw*100/360);
+        width: calc(14vw*100/360);
+        left: calc(3vw*100/360);
+        bottom: calc(3vw*100/360);
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(calc(15vw*100/360));
+    }
+
+    /* header-end */
+
+
+    /* main-start */
+
+    h1 {
+        font-size: var(--fs18);
+        padding-top: calc(30vw*100/360);
+        padding-left: calc(16vw*100/360);
+        padding-right: calc(16vw*100/360);
+        text-align: center;
+    }
+
+    .inputs {
+        padding-left: calc(46vw*100/360);
+        padding-right: calc(46vw*100/360);
+        padding-top: calc(60vw*100/360);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .inputs p {
+        margin-bottom: 0;
+    }
+
+    .inputs p:nth-child(1) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .inputs p:nth-child(2) {
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .inputs p input {
+        width: calc(100vw*100/360);
+        height: calc(25vw*100/360);
+        border-radius: calc(7vw*100/360);
+        border: solid calc(2vw*100/360) var(--black);
+        margin-left: calc(10vw*100/360);
+        margin-right: calc(10vw*100/360);
+        font-size: var(--fs16);
+        padding-left: calc(3vw*100/360);
+        padding-right: calc(3vw*100/360);
+    }
+
+    .inputs p select {
+        width: calc(50vw*100/360);
+        height: calc(25vw*100/360);
+        border-radius: calc(7vw*100/360);
+        border: solid calc(2vw*100/360) var(--black);
+        margin-left: 0;
+        margin-right: calc(10vw*100/360);
+        font-size: var(--fs16);
+        padding-left: calc(4vw*100/360);
+        margin-bottom: calc(20vw*100/360);
+        margin-top: calc(20vw*100/360);
+    }
+
+    .inputs p select:not([multiple]) {
+        background-position: calc(25vw*100/360);
+        background-size: calc(16vw*100/360);
+        background-image: url(../imgs/forSelect.svg);
+    }
+
+    .button {
+        margin-top: calc(20vw*100/360);
+        margin-bottom: calc(40vw*100/360);
+        width: calc(130vw*100/360);
+        height: calc(35vw*100/360);
+        border-radius: calc(10vw*100/360);
+        border: solid calc(2vw*100/360) var(--black);
+        background-color: var(--white);
+        box-shadow: calc(5vw*100/360) calc(5vw*100/360) calc(5vw*100/360) 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .button:hover {
+        transform: translateY(calc(3vw*100/360));
+    }
+
+    .result {
+        margin-top: calc(20vw*100/360);
+        width: calc(220vw*100/360);
+        min-height: calc(45vw*100/360);
+        border-radius: calc(9vw*100/360);
+        border: solid calc(2vw*100/360) var(--black);
+        padding-left: calc(5vw*100/360);
+        padding-right: calc(5vw*100/360);
+        background-color: var(--white);
+        font-size: var(--fs16);
+    }
+
+    .line {
+        position: absolute;
+        bottom: calc(50vw*100/360);
+        display: block;
+        width: 100%;
+        height: calc(15vw*100/360);
+        background-color: var(--purple);
+        z-index: 2;
+    }
+}
